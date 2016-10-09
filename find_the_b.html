@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		document.write(findB("this is b B b"));
+
+		function findB(phrase){
+			var count = 0;
+			for (var i = 0; i < phrase.length; i++){
+				if (phrase.charAt(i) === "b" || phrase.charAt(i) === "B"){
+					count = count + 1;
+				}
+			}
+		return count; //returns 3
+		}
+
+	</script>
+</body>
+</html>
